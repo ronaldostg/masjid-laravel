@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #E5E7EB;
+}
+
+.banner{
+  position : relative;
+ 
+}
+
+.banner::after{
+  content :'';
+  width : 100%;
+  height : 100%;
+  position : absolute;
+  top : 0;
+  right : 0;
+  background : black;
+  opacity : 0.6;
+  border-radius : 18px;
+}
+
+.aktivitas-container{
+  position : relative;
+  
+}
+
+.aktivitas-container::after{
+  content :'';
+  width : 100%;
+  height : 100%;
+  position : absolute;
+  top : 0;
+  right : 0;
+  background : black;
+  opacity : 0.6;
+  border-radius : 8px;
+}
+
+.numberCircle {
+    width: 24px;
+    height:  24px;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+
+  #container-masjid{
+    cursor : pointer;
+  }
+
+  .click-back{
+    animation-name : clickbackanimation;
+    animation-duration :2s;
+  }
+
+  @keyframes clickbackanimation {
+    0% { opacity:0}
+    40% { opacity:0.5}
+    100% { opacity:1}
+  }
+  
+  /* .numberCircle:before,
+  .numberCircle:after {
+    content: '\200B';
+    display: inline-block;
+    line-height: 0px;
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+  
+  .numberCircle:before {
+    padding-left: 8px;
+  }
+  
+  .numberCircle:after {
+    padding-right: 8px;
+  } */
+
